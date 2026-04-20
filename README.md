@@ -36,6 +36,8 @@
 └── README.md
 ```
 
+---
+
 ## 🛠️ 핵심 구현 기술 (Technical Implementation)
 
 ### **1. Core Detection Operations (`ops.py`)**
