@@ -6,6 +6,26 @@ class DetectionOps:
     """객체 탐지 평가 및 후처리를 위한 코어 연산 모듈"""
     
     @staticmethod
+    def xywh_to_xyxy(box: Union[List[float], np.ndarray, torch.Tensor]) -> Union[np.ndarray, torch.Tensor]:
+        """
+        [x_center, y_center, width, height] 포맷을 
+        [x_min, y_min, x_max, y_max] 포맷으로 변환합니다.
+        모델의 Regression 출력과 IoU 연산의 호환성을 맞추기 위한 필수 유틸리티입니다.
+        """
+        if isinstance(box, torch.Tensor):
+            x1 = box[0] - box[2] / 2
+            y1 = box[1] - box[3] / 2
+            x2 = box[0] + box[2] / 2
+            y2 = box[1] + box[3] / 2
+            return torch.stack([x1, y1, x2, y2])
+        else: # Numpy or List
+            x1 = box[0] - box[2] / 2
+            y1 = box[1] - box[3] / 2
+            x2 = box[0] + box[2] / 2
+            y2 = box[1] + box[3] / 2
+            return np.array([x1, y1, x2, y2])
+
+    @staticmethod
     def calculate_iou(
         box1: Union[List[float], np.ndarray, torch.Tensor], 
         box2: Union[List[float], np.ndarray, torch.Tensor]
