@@ -23,7 +23,7 @@
 ---
 
 ## 🎯 핵심 목표 (Motivation)
-| 핵심 질문 (Question) | 해결하기 위한 노력 (Approach) | 깨달은 점 (Insight) |
+| 핵심 질문 (Question) | 해결하기 위한 노력 (Approach) | 깨달은 점 (Insight) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
 | :--- | :--- | :--- |
 | **"박스가 겹친 정도를 어떻게 수치화할까?"** | IoU(Intersection over Union) 계산식을 <br>직접 함수로 구현 | 컴퓨터가 이미지 좌표를 인식하고 면적을 <br>계산하는 기초 기하학 원리 이해 |
 | **"지저분하게 겹친 박스들을 어떻게 치울까?"** | NMS(Non-Maximum Suppression) 알고리즘 로직 설계 | 수많은 예측 중 가장 높은 확률만 남기는 <br>효율적인 후처리 데이터 필터링 방식 체득 |
