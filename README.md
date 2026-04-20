@@ -42,8 +42,8 @@
 │   ├── 1_객체탐지_BBOX.ipynb     # 기초 알고리즘 시각화 및 테스트
 │   └── 2_Single_Object.ipynb    # 단일 객체 탐지 모델 학습 실습
 ├── .gitignore                   # 불필요한 캐시나 설정 파일 업로드 방지
-├── requirements.txt             # 프로젝트 실행을 위한 라이브러리 목록
-└── README.md
+├── README.md
+└──requirements.txt             # 프로젝트 실행을 위한 라이브러리 목록
 ```
 
 ---
