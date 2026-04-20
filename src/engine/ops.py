@@ -70,6 +70,9 @@ class DetectionOps:
             
         if isinstance(boxes, torch.Tensor): boxes = boxes.cpu().numpy()
         if isinstance(scores, torch.Tensor): scores = scores.cpu().numpy()
+        
+        # [N, 1] 형태의 2차원 배열이 들어올 경우를 대비해 1차원으로 평탄화
+        scores = scores.flatten() 
             
         idxs = np.argsort(scores)[::-1]
         keep = []
