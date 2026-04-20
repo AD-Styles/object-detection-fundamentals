@@ -47,7 +47,7 @@
 ---
 
 ## 🛠️ 핵심 구현 기술 (Technical Implementation)
-| 핵심 개념 (Core Concept) | 구현한 방식 (Implementation Details) | 깨달은 점 (Key Insight) |
+| 핵심 개념 (Core Concept) &emsp;&emsp;&emsp;&emsp; | 구현한 방식 (Implementation Details) | 깨달은 점 (Key Insight) |
 | :--- | :--- | :--- |
 | **좌표 포맷 변환 <br>유틸리티** | `[cx, cy, w, h]` → `[x1, y1, x2, y2]` 변환하는 `xywh_to_xyxy` 함수 구현. 모델 출력(Sigmoid 정규화 좌표)과 IoU 연산 입력 포맷 간의 호환성을 맞추기 위한 필수 전처리 단계. | 모델이 출력하는 좌표 표현 방식과 실제 계산에 쓰이는 포맷이 다름을 이해하고, 파이프라인의 각 단계를 명확히 분리하는 설계 역량 습득. |
 | **IoU 계산 <br>알고리즘** | 교집합/합집합 계산 로직의 `calculate_iou` 함수 직접 구현. 분모 0 에러 방지를 위한 `1e-16`(Epsilon) 처리 코드 추가. | 컴퓨터가 픽셀 좌표를 이용해 면적과 겹침 정도를 계산하는 기하학적 원리의 근본적 이해. |
