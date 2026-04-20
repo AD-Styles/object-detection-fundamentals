@@ -1,5 +1,5 @@
-# 📝 From-scratch implementation of core object detection algorithms (IoU/NMS) and CNN-based single object detector
-### 객체 탐지 핵심 알고리즘(IoU/NMS) 및 CNN 기반 단일 객체 탐지 모델의 직접 구현(From Scratch) 파이프라인
+# 📝 Object Detection from Scratch: Learning the Core Logic
+### 객체 탐지(Object Detection) 의 핵심 원리
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)
