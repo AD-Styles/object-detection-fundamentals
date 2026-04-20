@@ -35,13 +35,13 @@
 ```text
 ├── src/
 │   ├── engine/
-│   │   └── ops.py          # IoU, NMS 등 핵심 수학 연산 모듈
+│   │   └── ops.py           # IoU, NMS 등 핵심 수학 연산 모듈
 │   └── models/
-│       └── detector.py     # 탐지 모델 아키텍처 및 손실 함수 정의
-├── .gitignore              # 불필요한 파일 업로드 방지
-├── LICENSE                 # MIT License (AD-Styles)
-├── README.md               # 프로젝트 리포트
-└── requirements.txt        # 라이브러리 설치 목록
+│       └── detector.py      # 탐지 모델 아키텍처 및 손실 함수 정의
+├── .gitignore               # 불필요한 파일 업로드 방지
+├── LICENSE                  # MIT License (AD-Styles)
+├── README.md                # 프로젝트 리포트
+└── requirements.txt         # 라이브러리 설치 목록
 ```
 
 ---
