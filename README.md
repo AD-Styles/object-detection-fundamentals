@@ -1,6 +1,5 @@
-# object-detection-fundamentals
-
-From-scratch implementation of core object detection algorithms (IoU/NMS) and CNN-based single object detector. / 객체 탐지 핵심 알고리즘(IoU/NMS) 및 CNN 기반 단일 객체 탐지 모델의 직접 구현(From Scratch) 파이프라인.
+# 📝 From-scratch implementation of core object detection algorithms (IoU/NMS) and CNN-based single object detector
+### 객체 탐지 핵심 알고리즘(IoU/NMS) 및 CNN 기반 단일 객체 탐지 모델의 직접 구현(From Scratch) 파이프라인
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)
@@ -25,10 +24,7 @@ From-scratch implementation of core object detection algorithms (IoU/NMS) and CN
 ---
 
 ## 📂 프로젝트 구조 (Project Structure)
-소프트웨어 모듈화 원칙을 적용하여 연산 엔진과 모델 정의부를 분리했습니다.
-
 ```text
-.
 ├── src/
 │   ├── engine/
 │   │   └── ops.py          # IoU, NMS 등 핵심 기하학 연산 로직 (Pro ver.)
@@ -38,3 +34,4 @@ From-scratch implementation of core object detection algorithms (IoU/NMS) and CN
 │   ├── 1_객체탐지_BBOX.ipynb  # 기초 알고리즘 검증 및 시각화 테스트
 │   └── 2_Single_Object.ipynb # 단일 객체 탐지 모델 학습 파이프라인 실습
 └── README.md
+```
