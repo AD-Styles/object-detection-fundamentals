@@ -47,7 +47,7 @@
 ---
 
 ## 🛠️ 핵심 구현 기술 (Technical Implementation)
-| 핵심 개념 (Core Concept) &emsp;&emsp;&emsp; | 구현 세부 내용 (Implementation Details) | 학습 포인트 및 통찰 (Key Insight) |
+| 핵심 개념 (Core Concept) &emsp; | 구현 세부 내용 (Implementation Details) | 학습 포인트 및 통찰 (Key Insight) |
 | :--- | :--- | :--- |
 | **IoU 계산 알고리즘** | 두 박스의 교집합 면적을 합집합 면적으로 나누는 `calculate_iou` 함수 직접 구현. 분모가 0이 되는 에러 방지를 위해 `1e-16`(Epsilon) 추가. | 컴퓨터가 픽셀 좌표계를 이용해 면적과 겹침 정도를 수치화하는 원리를 이해함. |
 | **NMS 후처리 로직** | Confidence Score가 가장 높은 박스를 기준으로 일정 수치 이상 겹치는 중복 박스들을 제거하는 `nms` 함수 설계. | 모델이 예측한 수많은 데이터 중 가장 신뢰도 높은 결과만 남기는 효율적인 데이터 정제 프로세스 습득. |
