@@ -14,6 +14,7 @@
 ---
 
 ### ✍️ 주요 학습 포인트
+
 | 단계 &emsp;&emsp;&emsp;&emsp; | 주요 내용 | 한 마디로? |
 | :--- | :--- | :--- |
 | **1. 기초 연산** | 두 박스가 얼마나 겹치는지 계산하는 IoU(Intersection over Union) 로직 구현 | "얼마나 정확하게 겹쳤나?" |
@@ -23,6 +24,7 @@
 ---
 
 ## 🎯 핵심 목표 (Motivation)
+
 | 핵심 질문 (Question) | 해결하기 위한 노력 (Approach) | 깨달은 점 (Insight) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
 | :--- | :--- | :--- |
 | **"박스가 겹친 정도를 어떻게 수치화할까?"** | IoU(Intersection over Union) 계산식을 직접 함수로 구현 | 컴퓨터가 이미지 좌표를 인식하고 면적을 계산하는 기초 기하학 원리 이해 |
@@ -32,6 +34,7 @@
 ---
 
 ## 📂 프로젝트 구조 (Project Structure)
+
 ```text
 ├── src/
 │   ├── engine/
@@ -47,6 +50,7 @@
 ---
 
 ## 🛠️ 핵심 구현 기술 (Technical Implementation)
+
 | 핵심 개념 (Core Concept) &emsp;&emsp;&emsp;&emsp; | 구현한 방식 (Implementation Details) | 깨달은 점 (Key Insight) |
 | :--- | :--- | :--- |
 | **좌표 포맷 변환 <br>유틸리티** | `[cx, cy, w, h]` → `[x1, y1, x2, y2]` 변환하는 `xywh_to_xyxy` 함수 구현. 모델 출력(Sigmoid 정규화 좌표)과 IoU 연산 입력 포맷 간의 호환성을 맞추기 위한 필수 전처리 단계. | 모델이 출력하는 좌표 표현 방식과 실제 계산에 쓰이는 포맷이 다름을 이해하고, 파이프라인의 각 단계를 명확히 분리하는 설계 역량 습득. |
@@ -58,7 +62,6 @@
 ---
 
 ## 📊 학습 성과 및 지표 (Results)
-
 
 | 항목 (Metrics) | 학습 초기 (Epoch 1) | 학습 완료 (Epoch 100) | 결과에 대한 해석 (Interpretation) |
 | :--- | :---: | :---: | :--- |
